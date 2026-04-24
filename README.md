@@ -21,7 +21,7 @@ miniautograd is a small auto-grad engine built from scratch using numpy.
 1. No GPU support
 2. supports only few activation function
 3. Not optimized 
-3. Education purpose
+3. Educational purpose
 
 ## Future Work ##
 1. Add Convoution layer
