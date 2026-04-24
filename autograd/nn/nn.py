@@ -1,5 +1,5 @@
 import numpy as np
-from engine.engine import Value
+from autograd import Value
 
 
 class Layer:
@@ -57,3 +57,8 @@ class MLP:
         for layer in self.layers:
             x = layer(x)
         return x
+    
+    def zero_grad(self):
+        """set all gradients to zero before backward pass"""
+        for param in self.parameters():
+            param.grad = np.zeros_like(param.data)

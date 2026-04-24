@@ -36,13 +36,9 @@ class ParameterTracker:
         """
         total_norm = 0.0
         for param in model.parameters():
-            squared_grad_sum = np.sum(param.grad) ** 2
+            squared_grad_sum = np.sum(param.grad**2) 
             total_norm += squared_grad_sum
             
         self.history['grad_norm'].append(total_norm)
 
 
-def zero_grad(model):
-    """set all gradients to zero before backward pass"""
-    for param in model.parameters():
-        param.grad = np.zeros_like(param.data)

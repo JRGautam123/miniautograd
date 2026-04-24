@@ -1,5 +1,5 @@
 import numpy as np
-from engine.engine import Value
+from autograd import Value
 
 def categorical_cross_entropy(y_true, y_pred:Value):
     if y_true.shape != y_pred.data.shape:
