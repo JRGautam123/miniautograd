@@ -4,7 +4,7 @@ miniautograd is a small auto-grad engine built from scratch using numpy.
 ## Motivation ## 
 1. Learning backpropagation
 2. Understanding working of Neural Network
-3. Inspired Andrej Karpathy micrograd
+3. Inspired from  Andrej Karpathy's micrograd
 
 ## Features ## 
 1. Computation graph with primitive operations like ( +, -, *, exp, /, etc)
